@@ -14,6 +14,8 @@ public class SMA {
 
     private double simpleMovingAverage = 0.0;
 
+    private int processedPeriods = 0;
+
     private double runningSum;
 
     /**
@@ -39,6 +41,7 @@ public class SMA {
     public void setSMA(double candleClose) {
         addCloses(candleClose);
         calculateSMA();
+        processedPeriods++;
     }
 
     /**
@@ -64,6 +67,10 @@ public class SMA {
         if (dataWindowCloses.size() == windowSize) {
             simpleMovingAverage = runningSum / windowSize;
         }
+    }
+
+    public boolean isReady(){
+        return processedPeriods >= windowSize;
     }
 
     public double getSMA() {
