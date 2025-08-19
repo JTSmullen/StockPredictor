@@ -1,7 +1,7 @@
 package com.StockPredictor.Controller;
 
 import com.StockPredictor.Indicators.Indicators.*;
-import com.StockPredictor.Score.ScoreEntity;
+import com.StockPredictor.Indicators.Repository.StockIndicator;
 import com.StockPredictor.User.User;
 import com.StockPredictor.Service.ScoreService;
 
@@ -18,7 +18,7 @@ public class ScoreController {
     }
 
     @PostMapping("/{symbol}")
-    public ScoreEntity scoreStock(@PathVariable String symbol,
+    public StockIndicator scoreStock(@PathVariable String symbol,
                                   @RequestParam double entryPrice,
                                   @RequestParam double currentPrice) {
         // TODO: fetch proper indicators not dummy ones
@@ -33,7 +33,7 @@ public class ScoreController {
         user.setEmail("demo@example.com");
         user.setPasswordHash("hashed");
 
-        return scoreService.calculateAndSave(user, symbol, entryPrice, currentPrice, ema, sma, rsi, atr, bb);
+        return scoreService.calculateAndSave(symbol, entryPrice, currentPrice, ema, sma, rsi, atr, bb);
     }
 
 }

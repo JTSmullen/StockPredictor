@@ -23,4 +23,8 @@ public class Stock {
         this.symbol = symbol;
     }
 
+    public String getSymbol(){
+        return symbol;
+    }
+
 }

@@ -56,6 +56,14 @@ public class Matchup {
         return homeScore;
     }
 
+    public void setHomeScore(Double homeScore){
+        this.homeScore = homeScore;
+    }
+
+    public void setAwayScore(Double awayScore){
+        this.awayScore = awayScore;
+    }
+
     public Double getAwayScore(){
         return awayScore;
     }

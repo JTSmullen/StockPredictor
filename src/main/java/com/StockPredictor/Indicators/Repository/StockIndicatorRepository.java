@@ -2,4 +2,10 @@ package com.StockPredictor.Indicators.Repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface StockIndicatorRepository extends JpaRepository<StockIndicator, String> {}
+import java.util.Optional;
+
+public interface StockIndicatorRepository extends JpaRepository<StockIndicator, String> {
+
+    Optional<StockIndicator> findBySymbol(String symbol);
+
+}
