@@ -23,7 +23,7 @@ public class BollingerBands {
     // TODO: Allow for population (N) and sample (N-1) variances
 
     /**
-     * Setup the Bollinger Band technical Indicator
+     * Set up the Bollinger Band technical Indicator
      * @param windowSize the number of candles to calculate the BB from
      * @param standardDeviation The number of standard deviations to be factored into the BB calculation
      */
@@ -89,6 +89,9 @@ public class BollingerBands {
 
     public double getLowerBand(){
         return lowerBand;
+    }
+    public double getMiddleBand() {
+        return simpleMovingAverage.getSMA();
     }
 
     /**
