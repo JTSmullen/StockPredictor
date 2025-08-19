@@ -1,4 +1,4 @@
-package com.StockPredictor.Points;
+package com.StockPredictor.Score;
 
 import com.StockPredictor.Indicators.*;
 import org.junit.jupiter.api.Test;
