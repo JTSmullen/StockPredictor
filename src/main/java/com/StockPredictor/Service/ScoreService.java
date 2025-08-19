@@ -1,13 +1,11 @@
 package com.StockPredictor.Service;
 
-import com.StockPredictor.Indicators.*;
+import com.StockPredictor.Indicators.Indicators.*;
 import com.StockPredictor.Score.*;
 import com.StockPredictor.User.*;
 import com.StockPredictor.Stock.*;
 
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public class ScoreService {

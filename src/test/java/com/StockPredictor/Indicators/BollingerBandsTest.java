@@ -1,5 +1,6 @@
 package com.StockPredictor.Indicators;
 
+import com.StockPredictor.Indicators.Indicators.BollingerBands;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Constructor;
@@ -93,7 +94,7 @@ class BollingerBandsTest {
 
     @Test
     void standardDeviationCalculator_throwsOnNullAndEmpty_viaReflection() throws Exception {
-        Class<?> clazz = Class.forName("com.StockPredictor.Indicators.BollingerBands$StandardDeviationCalculator");
+        Class<?> clazz = Class.forName("com.StockPredictor.Indicators.Indicators.BollingerBands$StandardDeviationCalculator");
 
         Constructor<?> ctor = clazz.getDeclaredConstructor();
         ctor.setAccessible(true);

@@ -1,5 +1,6 @@
 package com.StockPredictor.Indicators;
 
+import com.StockPredictor.Indicators.Indicators.SMA;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 

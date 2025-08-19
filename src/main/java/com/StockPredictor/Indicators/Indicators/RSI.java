@@ -1,4 +1,4 @@
-package com.StockPredictor.Indicators;
+package com.StockPredictor.Indicators.Indicators;
 
 public class RSI {
 

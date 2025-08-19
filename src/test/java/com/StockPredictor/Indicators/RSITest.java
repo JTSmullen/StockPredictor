@@ -1,5 +1,6 @@
 package com.StockPredictor.Indicators;
 
+import com.StockPredictor.Indicators.Indicators.RSI;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

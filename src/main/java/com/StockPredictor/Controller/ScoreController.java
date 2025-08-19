@@ -1,6 +1,6 @@
 package com.StockPredictor.Controller;
 
-import com.StockPredictor.Indicators.*;
+import com.StockPredictor.Indicators.Indicators.*;
 import com.StockPredictor.Score.ScoreEntity;
 import com.StockPredictor.User.User;
 import com.StockPredictor.Service.ScoreService;

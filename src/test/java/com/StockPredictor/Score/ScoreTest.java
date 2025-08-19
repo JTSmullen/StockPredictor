@@ -1,6 +1,6 @@
 package com.StockPredictor.Score;
 
-import com.StockPredictor.Indicators.*;
+import com.StockPredictor.Indicators.Indicators.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

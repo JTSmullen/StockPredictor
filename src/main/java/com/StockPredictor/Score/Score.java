@@ -1,6 +1,6 @@
 package com.StockPredictor.Score;
 
-import com.StockPredictor.Indicators.*;
+import com.StockPredictor.Indicators.Indicators.*;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

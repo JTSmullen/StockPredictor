@@ -1,4 +1,4 @@
-package com.StockPredictor.Indicators;
+package com.StockPredictor.Indicators.Indicators;
 
 import java.util.List;
 import java.util.LinkedList;
